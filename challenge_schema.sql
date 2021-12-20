@@ -28,7 +28,12 @@ CREATE TABLE vine_table (
   verified_purchase TEXT
 );
 
+-- Check to see if data loaded properly
 SELECT * FROM review_id_table;
 SELECT * FROM products_table;
 SELECT * FROM customers_table;
 SELECT * FROM vine_table;
+
+-- Filter to show total_votes greater than 20
+SELECT * FROM vine_table
+WHERE total_votes >= 20;
